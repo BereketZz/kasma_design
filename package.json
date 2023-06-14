@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "google-maps-react": "^2.0.6",
+    "mdb-react-ui-kit": "^6.1.0",
+    "mdb-ui-kit": "^6.3.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

@@ -1,42 +1,124 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+ width: 100%;
+ text-align: center;
+
+ 
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.conatiner{
+  position: relative;
   text-align: center;
+  color: white;
+}
+.conatiner .center{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+.img-cont-one{
+  position: relative;
+  
+  text-align: center;
+  
+
+}
+.img-cont-one img{
+  opacity: 1;
+ 
+  transition: .5s ease;
+}
+.img-cont-one .inside-one{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+ 
+  border-width: 50%;
+  
+}
+.inside-one h2{
+  
+}
+.img-cont-one:hover{
+
+  border: 5px solid black;
+}
+.img-cont-one:hover img{
+  opacity: 0.3;
+  cursor: pointer;
+}
+.img-cont-one:hover .inside-one{
+  opacity: 1;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.project-cont{
+  
+  background-color: #f1f1f1;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#contact{
+  width: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+#contact .sub-contact{
+  width: 100%;
+  display:flex;
+ justify-content:center;
+  align-items: center;
+}
+#contact .sub-contact .row{
+  width: 70%;
+
+}
+.desc-part{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.desc-part p{
+  width: 60%;
+  text-align: justify;
+  line-height: 35px;
+}
+@media only screen and (max-width:1500px){
+  .conatiner .center{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+  
   }
-  to {
-    transform: rotate(360deg);
+  .conatiner .center h2{
+  font-size: 20px;   
+  
   }
+  .conatiner .center span{
+    width: 100%;
+    font-size: 13px;   
+    
+    }
+    #contact .sub-contact .row{
+      width: 100%;
+     
+    }
+
+    .desc-part p{
+      width: 90%;
+      text-align: justify;
+      line-height: 32px;
+      color: black;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
